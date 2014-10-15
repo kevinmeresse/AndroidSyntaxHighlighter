@@ -8,7 +8,12 @@
 	<script type="text/javascript" src="scripts/shBrushXml.js"></script>
 	<link type="text/css" rel="stylesheet" href="styles/shCoreDefault.css"/>
 	<link type="text/css" rel="stylesheet" href="styles/shThemeEclipse.css"/>
-	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	<script type="text/javascript">
+		SyntaxHighlighter.defaults['gutter'] = false;
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.defaults['auto-links'] = false;
+		SyntaxHighlighter.all();
+	</script>
 </head>
 
 <body style="background: white; font-family: Helvetica">
@@ -16,7 +21,7 @@
 <h1>SyntaxHighlighter for Android (Java and XML)</h1>
 
 <h3>Java</h3>
-<pre class="brush: java; gutter: false;">
+<pre class="brush: java;">
 public class MyClass {
 	
 	public MyClass() {}
@@ -31,7 +36,7 @@ public class MyClass {
 <br/><br/>
 
 <h3>XML</h3>
-<pre class="brush: xml; gutter: true; auto-links: false;">
+<pre class="brush: xml; gutter: true;">
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.my.package"
