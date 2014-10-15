@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Android SyntaxHighlighter</title>
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="scripts/shBrushXml.js"></script>
+	<link type="text/css" rel="stylesheet" href="styles/shCoreDefault.css"/>
+	<link type="text/css" rel="stylesheet" href="styles/shThemeEclipse.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body style="background: white; font-family: Helvetica">
+
+<h1>SyntaxHighlighter for Android (Java and XML)</h1>
+
+<h3>Java</h3>
+<pre class="brush: java; gutter: false;">
+public class MyClass {
+	
+	public MyClass() {}
+
+	public static MyClass newInstance(int count) {
+		int myCount = count;
+		this.test = "This is a test";
+	}
+}
+</pre>
+
+<br/><br/>
+
+<h3>XML</h3>
+<pre class="brush: xml; gutter: true; auto-links: false;">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.my.package"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="20" />
+
+</manifest>
+</pre>
+
+</html>
